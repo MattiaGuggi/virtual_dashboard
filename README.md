@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Virtual Hub 🌐🕹️
 
-## Getting Started
+A 2D/3D management dashboard to orchestrate, start, stop, and launch local web applications. Think of it as a spatial menu for your local development environment.
 
-First, run the development server:
+## 🚀 Features
+* **Dual Interface:** Switch seamlessly between a practical 2D dashboard and a 3D interactive "Wreck-it Ralph" style hub.
+* **Process Orchestration:** Start and stop local Node/Next.js/React servers directly from the browser using a local API.
+* **Spatial Navigation:** Walk into a 3D arcade cabinet or portal to open the respective local web app.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+* **Framework:** Next.js (App Router) + TypeScript
+* **3D Engine:** Three.js + React Three Fiber + React Three Drei
+* **Physics:** React Three Rapier (for 3D collisions)
+* **State Management:** Zustand
+* **Styling:** Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Initial Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Create the project:**
+   ```bash
+   npx create-next-app@latest virtual-hub
+   ```
+   *(Select Yes for TypeScript, ESLint, Tailwind CSS, App Router. Select No for `src/` directory)*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies:**
+   ```bash
+   cd virtual-hub
+   npm install three @react-three/fiber @react-three/drei
+   npm install @react-three/rapier
+   npm install zustand lucide-react
+   ```
 
-## Learn More
+## 🗺️ Roadmap
+- Phase 1: Define Project Configuration & Data Structure
+- Phase 2: Build the Next.js API Orchestrator (Node `child_process`)
+- Phase 3: Develop the 2D Dashboard MVP
+- Phase 4: Build the 3D Virtual Hub Room
+- Phase 5: Production/Portability Polish
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚠️ Notes on Local vs. Production
+This application relies on Node.js `child_process` to manage local server ports. In a production environment, the terminal execution features will be disabled, and portals will route directly to live URLs.
