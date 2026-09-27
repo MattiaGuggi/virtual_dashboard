@@ -2,56 +2,47 @@ import { ProjectConfigType } from "@/lib/types";
 
 export const projects: ProjectConfigType[] = [
     {
-        id: 'portfolio',
-        name: 'Portfolio',
-        localPath: '/path/to/your/portfolio',
-        startCommand: 'npm run dev',
-        port: 3001,
-        productionUrl: '',
-        themeColor: '#3b82f6'
-    },
-    {
         id: 'polls',
         name: 'Polls App',
-        localPath: '/path/to/your/ecommerce',
+        localPath: 'C:\\Users\\Utente\\Desktop\\next\\polls',
         startCommand: 'npm run dev',
-        port: 3002,
+        port: 3001,
         productionUrl: '',
         themeColor: '#10b981'
     },
     {
         id: 'closet',
         name: 'Closet App',
-        localPath: '/path/to/your/ecommerce',
+        localPath: 'C:\\Users\\Utente\\Desktop\\next\\closet',
         startCommand: 'npm run dev',
-        port: 3003,
+        port: 3002,
         productionUrl: '',
         themeColor: '#10b981'
     },
     {
         id: 'spotify',
         name: 'Spotify Dashboard',
-        localPath: '/path/to/your/ecommerce',
+        localPath: 'C:\\Users\\Utente\\Desktop\\next\\spotify_dashboard',
         startCommand: 'npm run dev',
-        port: 3004,
+        port: 3003,
         productionUrl: '',
         themeColor: '#10b981'
     },
     {
         id: 'karate',
         name: 'Karate App',
-        localPath: '/path/to/your/ecommerce',
+        localPath: 'C:\\Users\\Utente\\Desktop\\next\\karate',
         startCommand: 'npm run dev',
-        port: 3005,
+        port: 3004,
         productionUrl: '',
         themeColor: '#10b981'
     },
     {
         id: 'bar',
         name: 'Bar Service',
-        localPath: '/path/to/your/ecommerce',
+        localPath: 'C:\\Users\\Utente\\Desktop\\next\\bar_service',
         startCommand: 'npm run dev',
-        port: 3006,
+        port: 3005,
         productionUrl: '',
         themeColor: '#10b981'
     }
